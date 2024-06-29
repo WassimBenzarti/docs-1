@@ -260,7 +260,7 @@ module.exports = {
 
 在视图中检测到时，配置`<nuxt-link>`用来预获取*代码分割*页面。需要支持[IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)(参阅 [CanIUse](https://caniuse.com/#feat=intersectionobserver))。
 
-我们建议使用[Polyfill.io](https://polyfill.io)等服务有条件地填充此功能：
+我们建议使用[Polyfill](https://cdnjs.cloudflare.com/polyfill)等服务有条件地填充此功能：
 
 `nuxt.config.js`
 
@@ -268,7 +268,7 @@ module.exports = {
 export default {
   head: {
     script: [
-      { src: 'https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver', body: true }
+      { src: 'https://cdnjs.cloudflare.com/polyfill/v2/polyfill.min.js?features=IntersectionObserver', body: true }
     ]
   }
 }

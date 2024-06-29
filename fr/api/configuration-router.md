@@ -261,7 +261,7 @@ Configurez `<nuxt-link>` pour pré-charger la page *divisée par code* lorsqu'el
 Nécessite [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) pour être 
 pris en charge (voir [CanIUse](https://caniuse.com/#feat=intersectionobserver)) .
 
-Nous vous recommandons de polyfiller conditionnellement cette fonctionnalité avec un service comme [Polyfill.io](https://polyfill.io):
+Nous vous recommandons de polyfiller conditionnellement cette fonctionnalité avec un service comme [Polyfill](https://cdnjs.cloudflare.com/polyfill):
 
 `nuxt.config.js`
 
@@ -269,7 +269,7 @@ Nous vous recommandons de polyfiller conditionnellement cette fonctionnalité av
 export default {
   head: {
     script: [
-      { src: 'https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver', body: true }
+      { src: 'https://cdnjs.cloudflare.com/polyfill/v2/polyfill.min.js?features=IntersectionObserver', body: true }
     ]
   }
 }
